@@ -1,0 +1,42 @@
+body {
+    margin: auto 0;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      background-color: #fff;
+}
+
+h1, p {
+	font-size: 90px;
+	text-shadow: 4px 0px 9px rgba(0, 0, 0, 1);
+}
+.jumbotron {
+    background-image: url("images/subway.jpg");
+    background-size:contain;
+    color:white;
+    text-align: center;
+}
+
+#topHead, #bottomHead {
+	background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+}
+
+#trainInfo, #addTrain{
+    margin-top: 10px;
+    border: solid 1px #2c3e50;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.input-group{
+	padding: 5px 10px 5px 10px;
+	width:100%;
+}
+
+#submitButton{
+	margin: 10px 0px 5px 10px;
+	padding: 5px 10px 5px 10px;
+	background-color: #2c3e50;
+	color:white;
+}
+

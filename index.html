@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Train schedulerr</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script type="text/javascript" src="assets/app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-3">Trains On Time</h1>
+                    <p class="lead">Where are you Going?</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="trainInfo">
+                <table class="table table-striped">
+                    <thead>
+                        <header id="topHead">Current Train Schedule</header>
+                        <tr id="allTrainInfo">
+                            <th id="mainName">Train Name</th>
+                            <th id="mainDest">Destination</th>
+                            <th id="mainFreq">Frequency (min)</th>
+                            <th id="mainArrival">Next Arrival</th>
+                            <th id="mainDistance">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Polar Express</th>
+                            <td>North Pole</td>
+                            <td>10</td>
+                            <td>20:00</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Polar Express</th>
+                            <td>North Pole</td>
+                            <td>10</td>
+                            <td>20:00</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Polar Express</th>
+                            <td>North Pole</td>
+                            <td>10</td>
+                            <td>20:00</td>
+                            <td>30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="addTrain">
+                <div class="boxes">
+                    <header id="bottomHead">Add Train</header>
+                    <div class="input-group">
+                        <label>Train Name</label>
+                        <input id="trainToAdd" type="text" class="form-control">
+                    </div>
+                    <div class="input-group">
+                        <label>Destination</label>
+                        <input type="text" class="form-control" id="trainDest">
+                    </div>
+                    <div class="input-group">
+                        <label>First Train Time (HH:mm-military time)</label>
+                        <input id="trainFirst" type="text" class="form-control">
+                    </div>
+                    <div class="input-group">
+                        <label>Frequency (min)</label>
+                        <input id="endYear" type="text" class="form-control" id="trainFreq">
+                    </div>
+                    <div id="buttonDiv">
+                        <button id="submitButton" type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+	</div>
+</html>
