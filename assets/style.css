@@ -1,7 +1,8 @@
 body {
     margin: auto 0;
-      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-      background-color: #fff;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-image: url("images/trainbg.jpg");
+    background-size:contain;
 }
 
 h1, p {
@@ -27,6 +28,7 @@ h1, p {
     border: solid 1px #474747;
     border-radius: 5px;
     padding: 0px;
+    background-color: white;
 }
 
 .input-group{
